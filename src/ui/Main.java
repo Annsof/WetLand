@@ -3,7 +3,8 @@ import java.util.Scanner;
 import model.Control;
 
 /**
-* This wetlands program facilitates the management of information related to said wetlands.
+* This wetlands program is a solution that manages the wetlands information, being able to add new wetlands, species and 
+* events and make certain counts and reports based on the recorded data.
 * @author Ana Londono
 * @since april 2022
 * @Version 1.0
@@ -16,8 +17,7 @@ public class Main{
 	/**
 	* sc is an object of the Scanner class that reads the input
 	**/
-	private Scanner sc;
-	
+	private Scanner sc;	
 	public Main(){
 		controller = new Control();
 		sc= new Scanner(System.in);
@@ -88,10 +88,10 @@ public class Main{
 			wetLandMaxNumWildLife();
 			break;
 			case 0:
-			System.out.println("Bye :-)!");
+			System.out.print("Bye :-)!\n");
 			break;
 			default:
-			System.out.println("Enter a valid option");
+			System.out.print("Enter a valid option\n");
 			break;
 		}
 			
